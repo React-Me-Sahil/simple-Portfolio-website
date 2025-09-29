@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* reset  */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+/* navbar styling  */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: beige;
+            padding: 35px 50px;
+            font-size: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+/* hero section styling */
+      .hero{
+        display: flex;
+    }
+    .left {
+            padding-top: 300px;
+            padding-left: 200px;
+            padding-bottom: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            /* border: 2px solid violet; */
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px;
+            border: 2px solid black;
+            margin-top: 20px;
+            background-color: violet;
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+        }
+
+        .right{
+            /* border: 9px solid black; */
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+        .img-right{
+            
+            /* border:  2px solid red; */
+            width: 550px;
+            height: 600px;
+        }
+
+/* project styling */
+        .project {
+            display: flex;
+        }
+
+        .card {
+            width: 404px;
+            margin-left: 166px;
+        }
+
+        .img1 {
+            width: 400px;
+            height: 200px;
+
+
+        }
+
+/* form styling */
+        .contact-me {
+            font-size: 50px;
+            border: 2px solid black;
+            padding: 20px;
+
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+        form {
+            border: 2px solid red;
+            padding: 100px;
+            background-color: rgba(128, 255, 0, 0.342);
+
+        }
+
+        .test {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: blue;
+            border: 2px solid red;
+            border-radius: 50px;
+            color: white;
+            padding: 20px;
+            font-size: .5em;
+
+        }
+
+/* footer styling */
+        footer {
+            padding: 30px;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <nav class="nav">
+            <a href="#">Anushka Mondal</a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- hero section start  -->
+    <section class="hero">
+        <div class="left">
+            <h1>Hi,i am Web Developer</h1>
+            <p>make a Awesome website using HTML,CSS,JAVASCRIPT and many other framworks like React.</p>
+            <a class="btn" href="#">see my Work</a>
+            <a class="btn" href="#">Contact Me</a>
+        </div>
+        <div class="right">
+            <img class="img-right" src="coding image.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- project start -->
+    <div class="project">
+        <div class="card" style="border: 2px solid black;">
+            <img class="img1" src="project-1.jpg" alt="">
+            <h2>Portfolio Website</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis vitae earum nobis dignissimos
+                dicta
+                esse iusto maiores officiis dolorem.</p>
+        </div>
+        <div class="card" style="border: 2px solid black;">
+            <img class="img1" src="project-2.jpg" alt="">
+            <h2>Project-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis vitae earum nobis dignissimos
+                dicta
+                esse iusto maiores officiis dolorem.</p>
+        </div>
+        <div class="card" style="border: 2px solid black;">
+            <img class="img1" src="project-1.jpg" alt="">
+            <h2>Project-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis vitae earum nobis dignissimos
+                dicta
+                esse iusto maiores officiis dolorem.</p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- form start -->
+    <section class="contact-me">
+
+        <form>
+            <h2>Contact Me</h2>
+            <div class="test">
+                <label for="name">Name : </label>
+                <input type="text" id="name">
+                <br> <br>
+                <label for="email">Email : </label>
+                <input type="email" id="name">
+                <br> <br>
+                <label for="text">Phone : </label>
+                <input type="Number" id="name">
+            </div>
+            <br> <br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+    <!-- footer start -->
+    <footer style="background-color: aqua;">
+        &copy copyrights by Anushka || All rights reserved
+    </footer>
+</body>
+
+</html>
