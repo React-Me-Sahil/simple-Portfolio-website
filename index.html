@@ -86,22 +86,76 @@
         }
 
 /* project styling */
-        .project {
+
+        /* project heading part */
+
+        .projectheadingtwo{
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 90px;
             display: flex;
+            justify-content: center;
         }
 
-        .card {
+        .projectheadingthree{
+            font-size: 45px;
+            color: red;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* project first three box part */
+
+        .all_first_three_cards_wrapper {
+            display: flex;
+            margin-top: 25px;
+            
+        }
+
+        .over_all_card {
             width: 404px;
             margin-left: 166px;
+            padding-bottom: 20px;
+            border: 2px solid black;
         }
 
-        .img1 {
+        .over_all_card_image {
             width: 400px;
             height: 200px;
+            padding: 20px;
 
 
         }
 
+        /* project last two box part */
+          
+
+        .all_last_two_cards_wrapper{
+            display: flex; 
+            padding-left: 284px;
+            margin-top: 50px;
+            
+        }
+        
+        .all-Project-btn{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid red;
+            margin-left: 160px;
+            
+            
+        }
+/* -miniproject styling */
+        
+        .miniheadingtwo{
+            padding-left: 20px;
+             padding-bottom: 5px;
+        }
+        .miniheadingthree{
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
 /* form styling */
         .contact-me {
             font-size: 50px;
@@ -163,9 +217,9 @@
     <section class="hero">
         <div class="left">
             <h1>Hi,i am Web Developer</h1>
-            <p>make a Awesome website using HTML,CSS,JAVASCRIPT and many other framworks like React.</p>
+            <p>make a Awesome website using HTML,CSS,JAVASCRIPT and many other frameworks like React.</p>
             <a class="btn" href="#">see my Work</a>
-            <a class="btn" href="#">Contact Me</a>
+            <a class="btn" href="#contact-me">Contact Me</a>
         </div>
         <div class="right">
             <img class="img-right" src="coding image.jpg" alt="">
@@ -173,35 +227,77 @@
     </section>
 
     <!-- project start -->
-    <div class="project">
-        <div class="card" style="border: 2px solid black;">
-            <img class="img1" src="project-1.jpg" alt="">
-            <h2>Portfolio Website</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis vitae earum nobis dignissimos
-                dicta
-                esse iusto maiores officiis dolorem.</p>
-        </div>
-        <div class="card" style="border: 2px solid black;">
-            <img class="img1" src="project-2.jpg" alt="">
-            <h2>Project-2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis vitae earum nobis dignissimos
-                dicta
-                esse iusto maiores officiis dolorem.</p>
-        </div>
-        <div class="card" style="border: 2px solid black;">
-            <img class="img1" src="project-1.jpg" alt="">
-            <h2>Project-3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis vitae earum nobis dignissimos
-                dicta
-                esse iusto maiores officiis dolorem.</p>
-        </div>
-    </div>
-    <br>
-    <hr>
-    <br>
 
+     <h2 class="projectheadingtwo" >My Project</h2>
+
+     <h3 class="projectheadingthree" >Some of My Distinguised Works</h3>
+
+
+
+    <section class="all_first_three_cards_wrapper">
+
+        <div class="over_all_card" >
+            <img class="over_all_card_image" src="project-1.jpg" alt="portfolio_website_image">
+            <h2 class="miniheadingtwo" >Web App Development </h2>
+            <h3 class="miniheadingthree">Portfolio Website</h3>
+            <a class="all-Project-btn" href="#">View On Github</a>
+        </div>
+
+        <div class="over_all_card" >
+            <img class="over_all_card_image" src="https://www.shutterstock.com/image-photo/portrait-young-couple-mobile-phones-600nw-2240668083.jpg" alt="dating_website_image">
+            <h2 class="miniheadingtwo" >Web App Development </h2>
+            <h3 class="miniheadingthree">Dating Website</h3>
+            <a class="all-Project-btn" href="#">View On Github</a>
+         </div>
+
+        <div class="over_all_card" >
+            <img class="over_all_card_image" src="https://thinkexam.com/blog/wp-content/uploads/2020/08/Introduction-of-Online-Examination-System.png" alt="online_examination_website_image">
+            <h2 class="miniheadingtwo">Web App Development </h2>
+            <h3 class="miniheadingthree" >Online Examination Portal</h3>
+            <a class="all-Project-btn" href="#">View On Github</a>
+        </div>
+
+    </section>
+    
+    
+
+    <section class="all_last_two_cards_wrapper" >
+        <div class="over_all_card ">
+            <img  class="over_all_card_image" src="https://i.ytimg.com/vi/HQCLzqhiT2w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAgfmbGJ7DH-BZUIpxVF7OhZxCYPA" alt="calculator_image">
+            <h2 class="miniheadingtwo">Mini Project </h2>
+            <h3 class="miniheadingthree">Calculator</h3>
+            <a class="all-Project-btn" href="#">View On Github</a>
+            
+        </div>
+
+        <div class="over_all_card " >
+            <img class="over_all_card_image" src="https://i.ytimg.com/vi/WE8aYoGK0Ec/maxresdefault.jpg" alt="to-do-list_image">
+            <h2 class="miniheadingtwo" >Mini Project </h2>
+            <h3 class="miniheadingthree"  >React To-Do-List</h3>
+            <a class="all-Project-btn" href="#">View On Github</a>
+            
+        </div>
+
+</section>
+<br>
+<br>
+
+<section>
+        <a style="
+        background-color: black; 
+        color: beige;
+        text-decoration: none;
+        padding: 20px;
+        margin: 860px;
+         " href="#">See All Projects</a> </section>
+
+
+
+         <br>
+         <br>
     <!-- form start -->
     <section class="contact-me">
+        
 
         <form>
             <h2>Contact Me</h2>
@@ -226,6 +322,7 @@
     <footer style="background-color: aqua;">
         &copy copyrights by Anushka || All rights reserved
     </footer>
+    
 </body>
 
 </html>
